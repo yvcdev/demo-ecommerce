@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:demo_ecommerce/layouts/layouts.dart';
 import 'package:get/get.dart';
 
+
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -56,6 +57,14 @@ class Login extends StatelessWidget {
                 Get.offAll(() => const Signup(), transition: Transition.fadeIn);
               }),
         ],
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            RoundedButton(title: 'Login', onClick: () {}),
+            Constants.normalSeparationV,
+            CustomTextButton(title: 'Register', onClick: () {}),
+          ],
+        ),
       ),
     );
   }
@@ -65,6 +74,9 @@ class _CenteredBox extends StatelessWidget {
   const _CenteredBox({Key? key, required this.children}) : super(key: key);
 
   final List<Widget> children;
+  const _CenteredBox({Key? key, required this.child}) : super(key: key);
+
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -99,6 +111,14 @@ class _CenteredBox extends StatelessWidget {
             padding: Constants.normalPadding,
           ),
         ],
+      child: Container(
+        width: 400,
+        decoration: BoxDecoration(boxShadow: [
+          Constants.normalBoxShadow(
+              color: Constants.primaryAccent.withOpacity(0.2))
+        ], color: Constants.white, borderRadius: Constants.normalBorderRadius),
+        child: child,
+        padding: Constants.normalPadding,
       ),
     );
   }
