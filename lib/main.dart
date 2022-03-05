@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const GetMaterialApp(
-        title: 'Demo E-commerce',
+        title: 'Demo e-commerce',
         debugShowCheckedModeBanner: false,
         home: Signup());
   }
