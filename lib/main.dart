@@ -3,8 +3,6 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'screens/screens.dart';
 
-import 'screens/screens.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -17,10 +15,6 @@ class MyApp extends StatelessWidget {
     return const GetMaterialApp(
         title: 'Demo e-commerce',
         debugShowCheckedModeBanner: false,
-        home: Home());
-    return const MaterialApp(
-        title: 'Demo e-commerce',
-        debugShowCheckedModeBanner: false,
-        home: Login());
+        home: Signup());
   }
 }

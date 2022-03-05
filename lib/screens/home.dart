@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultLayout(
+    return const DefaultLayout(
       body: Text('Home'),
     );
   }
