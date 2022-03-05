@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
         title: 'Demo e-commerce',
-        initialRoute: '/',
         debugShowCheckedModeBanner: false,
         home: Home());
   }
