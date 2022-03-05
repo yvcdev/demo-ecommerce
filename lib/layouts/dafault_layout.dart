@@ -26,6 +26,7 @@ class DefaultLayout extends StatelessWidget {
       appBar: appbar!
           ? AppBar(
               title: Text(title!),
+              backgroundColor: Constants.secondaryAccent,
             )
           : null,
       drawer: drawer! ? const CustomDrawer() : null,

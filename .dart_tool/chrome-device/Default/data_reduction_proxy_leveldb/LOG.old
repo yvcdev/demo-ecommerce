@@ -1,2 +1,5 @@
-2022/03/04-21:27:59.893 6c03 Creating DB /private/var/folders/77/4h_5v971173542t56p5q3lnm0000gn/T/flutter_tools.cC7usU/flutter_tools_chrome_device.DyQO38/Default/data_reduction_proxy_leveldb since it was missing.
-2022/03/04-21:28:00.007 6c03 Delete type=3 #1
+2022/03/04-21:37:28.701 6403 Recovering log #5
+2022/03/04-21:37:28.760 6403 Delete type=0 #5
+2022/03/04-21:37:28.760 6403 Delete type=0 #3
+2022/03/04-21:37:28.760 6403 Delete type=3 #4
+2022/03/04-21:37:28.760 6403 Delete type=3 #2

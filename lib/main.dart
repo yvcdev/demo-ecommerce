@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'screens/screens.dart';
 
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return const GetMaterialApp(
         title: 'Demo e-commerce',
+        initialRoute: '/',
         debugShowCheckedModeBanner: false,
-        home: Login());
+        home: Home());
   }
 }

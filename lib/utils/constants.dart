@@ -21,6 +21,7 @@ class Constants {
   static final normalBorderRadius = BorderRadius.circular(15);
   static const normalSeparationV = SizedBox(height: 15);
   static const normalSeparationH = SizedBox(width: 15);
+  static const largeSeparationV = SizedBox(height: 30);
 
   //styles
   static TextStyle normalTextStyle({Color color = Colors.black}) =>
@@ -33,4 +34,31 @@ class Constants {
         blurRadius: 10,
         offset: const Offset(0, 2),
       );
+  static InputDecoration inputDecoration({
+    String? hintText,
+    String? labelText = '',
+    Color focusColor = primary,
+    IconData? iconData,
+  }) =>
+      InputDecoration(
+          border: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(12),
+            ),
+          ),
+          focusedBorder: OutlineInputBorder(
+              borderRadius: const BorderRadius.all(
+                Radius.circular(12),
+              ),
+              borderSide: BorderSide(color: focusColor, width: 2)),
+          hintText: hintText,
+          labelStyle: TextStyle(color: focusColor),
+          focusColor: focusColor,
+          icon: iconData != null
+              ? Icon(
+                  iconData,
+                  color: focusColor,
+                )
+              : null,
+          label: Text(labelText!));
 }
