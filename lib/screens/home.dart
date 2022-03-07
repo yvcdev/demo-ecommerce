@@ -11,6 +11,8 @@ class Home extends StatelessWidget {
     final productsController = Get.put(ProductsController());
 
     return ProductGirdView(
-        title: 'Our Products', products: productsController.getProducts());
+        appBarTitle: 'Home',
+        title: 'Our Products',
+        products: productsController.getProducts());
   }
 }
