@@ -24,6 +24,8 @@ class Constants {
   static const largeSeparationV = SizedBox(height: 30);
 
   //styles
+  static TextStyle normalTextStyleBold({Color color = Colors.black}) =>
+      TextStyle(fontSize: 20, color: color, fontWeight: FontWeight.bold);
   static TextStyle normalTextStyle({Color color = Colors.black}) =>
       TextStyle(fontSize: 20, color: color);
   static TextStyle smallTextStyle({Color color = Colors.black}) =>

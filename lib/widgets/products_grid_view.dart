@@ -7,16 +7,21 @@ import 'package:demo_ecommerce/layouts/layouts.dart';
 import '../models/products.dart';
 
 class ProductGirdView extends StatelessWidget {
-  const ProductGirdView({Key? key, required this.products, required this.title})
+  const ProductGirdView(
+      {Key? key,
+      required this.products,
+      required this.title,
+      required this.appBarTitle})
       : super(key: key);
 
   final Future<List<Product>?> products;
   final String title;
+  final String appBarTitle;
 
   @override
   Widget build(BuildContext context) {
     return DefaultLayout(
-      title: 'Home',
+      title: appBarTitle,
       body: FutureBuilder<List<Product>?>(
         future: products,
         builder: ((context, snapshot) {
