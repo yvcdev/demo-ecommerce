@@ -74,6 +74,24 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "http",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.8.1/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.8.1/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "intl",
+      "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.8.1/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///opt/homebrew/Caskroom/flutter/2.8.1/flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1",
       "packageUri": "lib/",
@@ -164,7 +182,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-03-05T06:47:04.575376Z",
+  "generated": "2022-03-07T14:18:01.511140Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }
