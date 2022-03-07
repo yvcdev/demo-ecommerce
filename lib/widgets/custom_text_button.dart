@@ -17,10 +17,18 @@ class CustomTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      customBorder: RoundedRectangleBorder(
+        borderRadius: Constants.smallBorderRadius,
+      ),
       onTap: () {
         onClick();
       },
-      child: Text(title, style: Constants.smallTextStyle(color: color!)),
+      child: Container(
+          padding: Constants.smallPadding,
+          decoration: BoxDecoration(
+            borderRadius: Constants.smallBorderRadius,
+          ),
+          child: Text(title, style: Constants.smallTextStyle(color: color!))),
     );
   }
 }
