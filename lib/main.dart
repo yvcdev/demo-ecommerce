@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
     return const GetMaterialApp(
         title: 'Demo e-commerce',
         debugShowCheckedModeBanner: false,
-        home: Home());
+        home: Login());
   }
 }

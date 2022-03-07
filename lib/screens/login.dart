@@ -20,6 +20,12 @@ class Login extends StatelessWidget {
             autovalidateMode: AutovalidateMode.onUserInteraction,
             child: Column(
               children: [
+                Text(
+                  'Demo E-commerce',
+                  style: Constants.normalTextStyleBold(
+                      color: Constants.secondaryAccent),
+                ),
+                Constants.largeSeparationV,
                 TextFormField(
                   validator: (value) {
                     if (!GetUtils.isEmail(value!)) {
