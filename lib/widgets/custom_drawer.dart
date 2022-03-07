@@ -1,9 +1,7 @@
-import 'package:demo_ecommerce/screens/home.dart';
-import 'package:demo_ecommerce/screens/login.dart';
-import 'package:demo_ecommerce/screens/screens.dart';
-import 'package:demo_ecommerce/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:demo_ecommerce/screens/screens.dart';
+import 'package:demo_ecommerce/utils/utils.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({Key? key}) : super(key: key);
@@ -15,6 +13,11 @@ class CustomDrawer extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
+          Constants.normalSeparationV,
+          const _SimpleListItemBuilder(
+            title: 'Demo E-commerce',
+          ),
+          Constants.normalSeparationV,
           _ListItemBuilder(
               title: 'Home',
               iconData: Icons.checklist_rtl_rounded,
@@ -81,6 +84,25 @@ class _ListItemBuilder extends StatelessWidget {
             style: Constants.normalTextStyleBold(color: color!),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _SimpleListItemBuilder extends StatelessWidget {
+  const _SimpleListItemBuilder({
+    Key? key,
+    required this.title,
+  }) : super(key: key);
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      title: Text(
+        title,
+        style: Constants.normalTextStyleBold(color: Constants.secondaryAccent),
       ),
     );
   }

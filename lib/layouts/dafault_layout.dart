@@ -27,6 +27,11 @@ class DefaultLayout extends StatelessWidget {
           ? AppBar(
               title: Text(title!),
               backgroundColor: Constants.secondaryAccent,
+              actions: [
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.shopping_cart_rounded))
+              ],
             )
           : null,
       drawer: drawer! ? const CustomDrawer() : null,
